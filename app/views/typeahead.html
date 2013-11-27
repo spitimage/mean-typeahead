@@ -1,0 +1,4 @@
+<div class='container-fluid'>
+    <pre>Model: {{selected| json}}</pre>
+    <input type="text" ng-model="selected" typeahead="item for item in items | filter:$viewValue">
+</div>
