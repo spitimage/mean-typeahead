@@ -26,6 +26,8 @@ app.options("*", function(req, res, next){
 
 // Create our routes
 app.get('/api/widgets', widgets.regex);
+app.post('/api/widgets', widgets.create);
+app.get('/api/widgets/count', widgets.count);
 
 // Catch-all error handler
 app.use(function (err, req, res, next) {
