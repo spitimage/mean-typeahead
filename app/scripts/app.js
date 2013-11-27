@@ -1,12 +1,6 @@
 'use strict';
 
-angular.module('meanTypeaheadApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ngRoute',
-  'ui.bootstrap'
-])
+angular.module('meanTypeaheadApp', ['ngRoute','ui.bootstrap'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
